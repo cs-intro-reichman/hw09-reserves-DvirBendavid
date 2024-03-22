@@ -45,10 +45,10 @@ public class List {
         Node curr = first;
         String s = "(";
         while(curr != null){
-            s += curr.toString() + ") ";
+            s += curr.toString() ;
             curr = curr.next;
         }
-        return s;
+        return s+")";
     }
 
     /** Returns the index of the first CharData object in this list
