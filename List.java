@@ -43,10 +43,9 @@ public class List {
     /** GIVE Textual representation of this list. */
     public String toString() {
         Node curr = first;
-        String s = "";
+        String s = "(";
         while(curr != null){
-            s += curr.toString();
-            s += "\n";
+            s += curr.toString() + ") ";
             curr = curr.next;
         }
         return s;
