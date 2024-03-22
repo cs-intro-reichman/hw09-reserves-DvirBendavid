@@ -48,6 +48,7 @@ public class List {
             s += curr.toString() ;
             curr = curr.next;
         }
+        s = s.substring(0,s.length()-1);
         return s+")";
     }
 
